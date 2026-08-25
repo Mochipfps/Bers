@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join Whitelist Bears On Ink</title>
+<meta name="description" content="Complete four social tasks and submit your EVM wallet to secure GTD access for the Bears On Ink mint.">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-base="../">
+
+<header class="topbar">
+  <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div class="rainbow-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<div class="menu-panel" id="menu-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="menu-card">
+    <header>
+      <span>MENU</span>
+      <button class="menu-close" id="menu-close" type="button">CLOSE</button>
+    </header>
+    <nav class="menu-list">
+      <a class="menu-link" href="../whitelist/">WHITELIST <span class="tag">OPEN</span></a>
+      <a class="menu-link" href="../gallery/">GALLERY <span class="tag">VIEW</span></a>
+      <a class="menu-link menu-link--locked" id="menu-staking" href="../staking/">STAKING <span class="tag">LOCKED</span></a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap" id="wl">
+  <div class="page-head">
+    <a class="btn btn--ghost btn--small" href="../">&lt; BACK</a>
+    <p class="eyebrow" style="margin:0">JOIN WHITELIST</p>
+  </div>
+
+  <div class="progress" id="wl-progress" role="img" aria-label="Whitelist progress">
+    <i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <p class="progress-label" id="wl-progress-label" role="status">Step 1 of 5</p>
+
+  <div class="pixel-box pixel-box--purple" style="margin-bottom:clamp(24px,4vw,38px)">
+
+    <!-- TASK 1 -->
+    <section class="step" data-step="1">
+      <div class="step-body">
+        <p class="step__no">TASK 1 OF 4</p>
+        <h1 class="step__title">FOLLOW BEARS ON INK ON X</h1>
+        <p class="step__text">Enter your X username, open the official profile and follow it. Come back here and press Verify to continue.</p>
+        <div class="field">
+          <label for="wl-username">YOUR X USERNAME</label>
+          <input id="wl-username" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="@yourname">
+          <p class="hint">Letters, numbers and underscore. Up to 15 characters.</p>
+          <p class="err" id="wl-username-err" role="alert"></p>
+        </div>
+        <div class="step__actions">
+          <a class="btn" id="wl-visit-1" data-link="x-profile" href="https://x.com/BearsOnInk" target="_blank" rel="noopener">OPEN X PROFILE</a>
+          <button class="btn btn--purple" id="wl-verify-1" type="button" disabled>VERIFY</button>
+        </div>
+      </div>
+      <div class="loading-state">
+        <div class="loadbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p role="status">CHECKING TASK 1...</p>
+      </div>
+    </section>
+
+    <!-- TASK 2 -->
+    <section class="step" data-step="2">
+      <div class="step-body">
+        <p class="step__no">TASK 2 OF 4</p>
+        <h2 class="step__title">LIKE THE PINNED POST</h2>
+        <p class="step__text">Open the pinned Bears On Ink post on X and like it. Return here and press Verify.</p>
+        <p class="task-note">Verify only becomes available after you open the post.</p>
+        <div class="step__actions">
+          <a class="btn" id="wl-open-2" data-link="x-post" href="https://x.com/BearsOnInk" target="_blank" rel="noopener">OPEN PINNED POST</a>
+          <button class="btn btn--purple" id="wl-verify-2" type="button" disabled>VERIFY</button>
+        </div>
+      </div>
+      <div class="loading-state">
+        <div class="loadbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p role="status">CHECKING TASK 2...</p>
+      </div>
+    </section>
+
+    <!-- TASK 3 -->
+    <section class="step" data-step="3">
+      <div class="step-body">
+        <p class="step__no">TASK 3 OF 4</p>
+        <h2 class="step__title">REPOST THE PINNED POST</h2>
+        <p class="step__text">Open the same pinned post and repost it. Return here and press Verify.</p>
+        <p class="task-note">Verify only becomes available after you open the post.</p>
+        <div class="step__actions">
+          <a class="btn" id="wl-open-3" data-link="x-post" href="https://x.com/BearsOnInk" target="_blank" rel="noopener">OPEN PINNED POST</a>
+          <button class="btn btn--purple" id="wl-verify-3" type="button" disabled>VERIFY</button>
+        </div>
+      </div>
+      <div class="loading-state">
+        <div class="loadbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p role="status">CHECKING TASK 3...</p>
+      </div>
+    </section>
+
+    <!-- TASK 4 -->
+    <section class="step" data-step="4">
+      <div class="step-body">
+        <p class="step__no">TASK 4 OF 4</p>
+        <h2 class="step__title">COMMENT ON THE PINNED POST</h2>
+        <div class="step__text">Leave a comment on the pinned post. Your comment must:
+          <ul>
+            <li>Tag 3 friends</li>
+            <li>Say something about the Bears On Ink project</li>
+          </ul>
+        </div>
+        <div class="step__actions" style="margin-bottom:22px">
+          <a class="btn" id="wl-open-4" data-link="x-post" href="https://x.com/BearsOnInk" target="_blank" rel="noopener">OPEN PINNED POST</a>
+        </div>
+        <div class="field">
+          <label for="wl-comment">SUBMIT YOUR COMMENT LINK</label>
+          <input id="wl-comment" type="url" inputmode="url" autocomplete="off" spellcheck="false" placeholder="https://x.com/yourname/status/1234567890">
+          <p class="hint">Copy the link to your own comment on the pinned post.</p>
+          <p class="err" id="wl-comment-err" role="alert"></p>
+        </div>
+        <div class="step__actions">
+          <button class="btn btn--purple" id="wl-verify-4" type="button">VERIFY</button>
+        </div>
+      </div>
+      <div class="loading-state">
+        <div class="loadbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p role="status">CHECKING COMMENT LINK...</p>
+      </div>
+    </section>
+
+    <!-- WALLET -->
+    <section class="step" data-step="5">
+      <div class="step-body">
+        <p class="step__no">FINAL STEP</p>
+        <h2 class="step__title">SUBMIT YOUR EVM WALLET</h2>
+        <p class="step__text">All four tasks are done. Add the EVM wallet address that should receive GTD access.</p>
+        <div class="field">
+          <label for="wl-wallet">EVM WALLET ADDRESS</label>
+          <input id="wl-wallet" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="0x0000000000000000000000000000000000000000">
+          <p class="hint">Starts with 0x followed by 40 characters.</p>
+          <p class="err" id="wl-wallet-err" role="alert"></p>
+        </div>
+        <div class="step__actions">
+          <button class="btn btn--purple" id="wl-submit" type="button">SUBMIT WHITELIST ENTRY</button>
+        </div>
+      </div>
+      <div class="loading-state">
+        <div class="loadbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p role="status">SUBMITTING ENTRY...</p>
+      </div>
+    </section>
+
+    <!-- SUCCESS -->
+    <section class="step" data-step="6">
+      <div class="step-body">
+        <canvas id="success-canvas" aria-hidden="true"></canvas>
+        <p class="step__no">WHITELIST COMPLETE</p>
+        <h2 class="step__title">CONGRATULATIONS! YOU HAVE SECURED GTD ACCESS.</h2>
+        <p class="step__text">Entry recorded for <strong id="wl-success-user">@...</strong> with wallet <strong id="wl-success-wallet">0x...</strong>.</p>
+        <p class="step__text">The Mint date will be announced on our X account. Follow Bears On Ink and turn on notifications so you do not miss the announcement.</p>
+        <div class="step__actions">
+          <a class="btn btn--purple" data-link="x-profile" href="https://x.com/BearsOnInk" target="_blank" rel="noopener">FOLLOW ON X</a>
+          <a class="btn btn--ghost" href="../">BACK TO HOME</a>
+        </div>
+      </div>
+      <div class="loading-state">
+        <div class="loadbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p role="status">LOADING...</p>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="pixel-box" style="margin-bottom:clamp(34px,6vw,60px)">
+    <p class="eyebrow" style="margin-bottom:12px">YOUR PROGRESS</p>
+    <ul class="done-list" id="wl-checklist">
+      <li><span class="mark">[ ]</span><span>Task 1 — Follow on X</span></li>
+      <li><span class="mark">[ ]</span><span>Task 2 — Like the pinned post</span></li>
+      <li><span class="mark">[ ]</span><span>Task 3 — Repost the pinned post</span></li>
+      <li><span class="mark">[ ]</span><span>Task 4 — Comment and submit the link</span></li>
+      <li><span class="mark">[ ]</span><span>Submit EVM wallet address</span></li>
+    </ul>
+    <p class="footer__note">Tasks must be completed in order. Verification confirms that you pressed Verify after completing each task — X follows, likes and reposts are not checked by an API in this version.</p>
+  </div>
+</main>
+
+<div id="toast-layer" aria-live="polite"></div>
+<script src="../js/main.js"></script>
+</body>
+</html>
