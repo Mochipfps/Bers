@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery Bears On Ink</title>
+<meta name="description" content="Browse the Bears On Ink pixel-art collection on Ink.">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-base="../">
+
+<header class="topbar">
+  <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div class="rainbow-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<div class="menu-panel" id="menu-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="menu-card">
+    <header>
+      <span>MENU</span>
+      <button class="menu-close" id="menu-close" type="button">CLOSE</button>
+    </header>
+    <nav class="menu-list">
+      <a class="menu-link" href="../whitelist/">WHITELIST <span class="tag">OPEN</span></a>
+      <a class="menu-link" href="../gallery/">GALLERY <span class="tag">VIEW</span></a>
+      <a class="menu-link menu-link--locked" id="menu-staking" href="../staking/">STAKING <span class="tag">LOCKED</span></a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="page-head">
+    <a class="btn btn--ghost btn--small" href="../">&lt; BACK</a>
+    <p class="eyebrow" style="margin:0">GALLERY</p>
+  </div>
+
+  <h1 class="h2" style="margin-bottom:14px">BEARS ON INK<br>GALLERY</h1>
+  <p class="body-text" id="gallery-count" style="margin-bottom:clamp(24px,4vw,38px)"></p>
+
+  <div class="gallery-grid" id="gallery-grid"></div>
+
+  <div style="margin:clamp(34px,6vw,60px) 0">
+    <div class="btn-row">
+      <a class="btn btn--purple" href="../whitelist/">JOIN WHITELIST</a>
+      <a class="btn btn--ghost" href="../">BACK TO HOME</a>
+    </div>
+  </div>
+</main>
+
+<div id="toast-layer" aria-live="polite"></div>
+<script src="../js/main.js"></script>
+</body>
+</html>
