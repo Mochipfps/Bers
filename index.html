@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bears On Ink — 3,000 pixel bears on Ink</title>
+<meta name="description" content="Bears On Ink is a 3,000-piece pixel-art NFT collection on Ink. Join the whitelist for GTD access.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-base="">
+
+<div id="intro" aria-hidden="true"><canvas></canvas></div>
+
+<header class="topbar">
+  <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<div class="rainbow-strip" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<div class="menu-panel" id="menu-panel" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="menu-card">
+    <header>
+      <span>MENU</span>
+      <button class="menu-close" id="menu-close" type="button">CLOSE</button>
+    </header>
+    <nav class="menu-list">
+      <a class="menu-link" href="whitelist/">WHITELIST <span class="tag">OPEN</span></a>
+      <a class="menu-link" href="gallery/">GALLERY <span class="tag">VIEW</span></a>
+      <a class="menu-link menu-link--locked" id="menu-staking" href="staking/">STAKING <span class="tag">LOCKED</span></a>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <!-- HERO / PROJECT INFO -->
+  <section class="section hero">
+    <div class="wrap">
+      <p class="eyebrow">PIXEL ART NFT COLLECTION</p>
+      <h1 class="h1">BEARS<br>ON INK</h1>
+      <p class="body-text lede">3,000 hand-placed pixel bears living on the Ink network. Whitelist is open now — complete four social tasks and secure GTD access before mint.</p>
+
+      <div class="info-grid">
+        <div class="info-cell"><div class="k">COLLECTION</div><div class="v">BEARS ON INK</div></div>
+        <div class="info-cell"><div class="k">SUPPLY</div><div class="v">3,000 NFTS</div></div>
+        <div class="info-cell"><div class="k">NETWORK</div><div class="v">INK</div></div>
+        <div class="info-cell"><div class="k">CATEGORY</div><div class="v">NFT</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NFT REVEAL -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="reveal-wrap">
+        <p class="eyebrow" style="margin-bottom:0">UNCOVER A BEAR</p>
+        <button class="reveal-stage" id="reveal-stage" type="button" aria-label="Reveal a Bears On Ink artwork">
+          <img id="reveal-img" alt="Bears On Ink pixel bear artwork">
+          <canvas id="reveal-canvas" aria-hidden="true"></canvas>
+        </button>
+        <p class="reveal-hint" id="reveal-hint">CLICK TO REVEAL</p>
+        <p class="reveal-count" id="reveal-count"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ACTIONS -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="btn-row">
+        <a class="btn btn--purple" href="whitelist/">JOIN WHITELIST</a>
+        <a class="btn" href="gallery/">GALLERY</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE TERMINAL -->
+  <section class="section">
+    <div class="wrap">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>LIVE WHITELIST ACTIVITY</span>
+        </div>
+        <div class="terminal__body" id="terminal-body">
+          <div id="term-boot"></div>
+          <p class="terminal__count" id="term-count" role="status">0 PEOPLE JOINED</p>
+          <ul class="terminal__feed" id="term-feed"></ul>
+          <span class="caret" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">ROADMAP</p>
+      <h2 class="h2" style="margin-bottom:clamp(24px,4vw,38px)">SIX PHASES,<br>ONE PIXEL PATH</h2>
+
+      <div class="roadmap-grid">
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 01</p>
+          <h3 class="phase__title">WHITELIST</h3>
+          <p class="phase__text">Community onboarding and GTD access. Complete the whitelist campaign and prepare the community for mint.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 02</p>
+          <h3 class="phase__title">MINT</h3>
+          <p class="phase__text">Launch the Bears On Ink NFT mint. The official mint date will be announced through X.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 03</p>
+          <h3 class="phase__title">COMMUNITY GROWTH</h3>
+          <p class="phase__text">Build the Bears On Ink community and continue expanding the ecosystem.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 04</p>
+          <h3 class="phase__title">STAKING</h3>
+          <p class="phase__text">After mint is completed, launch NFT staking. Holders will be able to stake their Bears On Ink NFTs.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 05</p>
+          <h3 class="phase__title">REWARDS</h3>
+          <p class="phase__text">Stakers will receive BearsOnInk tokens and ETH rewards according to the staking system.</p>
+        </article>
+        <article class="phase">
+          <div class="phase__blocks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="phase__no">PHASE 06</p>
+          <h3 class="phase__title">ECOSYSTEM</h3>
+          <p class="phase__text">Continue developing the Bears On Ink ecosystem, community activities and future utilities.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__links">
+      <a class="btn" data-link="x-profile" href="https://x.com/BearsOnInk" target="_blank" rel="noopener">X</a>
+      <a class="btn btn--ghost" data-link="opensea" href="#" role="button" aria-disabled="true">OPENSEA — SOON</a>
+    </div>
+    <p class="footer__note">Mint date is announced on X. Follow @BearsOnInk and turn on notifications.</p>
+  </div>
+</footer>
+
+<div id="toast-layer" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
